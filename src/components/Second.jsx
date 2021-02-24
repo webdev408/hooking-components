@@ -10,7 +10,11 @@ const Second = () => {
     ])
 
     const addItem = () => {
-        setLanguage([...language, {id: uuid(), name: "C#", rank: 'Fifth', application: "programming application"}])
+        setLanguage([...language,
+             {id: uuid(), name: "C#", rank: 'Fifth', application: "programming application"},
+             {id: uuid(), name: 'Django3', rank: 'Tenth', application: 'Full Stack development'},
+             {id: uuid(), name: 'PHP', rank: 'Ninth', application: 'Web Development'}
+            ])
     }
 
     const [color, setColor] = useState('dodgerBlue')
@@ -21,7 +25,7 @@ const Second = () => {
     }, [color])
 
      const changeColor = () => {
-        setColor('gold')
+        setColor('darkBlue')
     }
 
     return (
